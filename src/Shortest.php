@@ -37,6 +37,9 @@ class Shortest
 
         // Shortest config.
         $this->config = $config;
+
+        // Check api_token
+        $this->checkConfig();
     }
 
     /**
@@ -95,5 +98,23 @@ class Shortest
 
         // Return the body as json.
         return $request->getBody();
+    }
+
+    /**
+     * Check the config file.
+     *
+     * @throws \Exception
+     */
+    private function checkConfig()
+    {
+        // Get the api token.
+        $api_token = $this->config->get('shortest.api_token');
+
+        // Check if it is not set or empty.
+        if(!isset($api_token) || empty($api_token))
+        {
+            // Throw exception.
+            throw new \Exception('The configuration value \'api_token\' is required.');
+        }
     }
 }
