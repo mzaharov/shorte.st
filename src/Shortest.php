@@ -32,7 +32,10 @@ class Shortest
      */
     public function __construct(Client $client, Config $config)
     {
+        // Guzzle HTTP client.
         $this->client = $client;
+
+        // Shortest config.
         $this->config = $config;
     }
 
@@ -74,10 +77,18 @@ class Shortest
     {
         // Prepare the request.
         $request = $this->client->put(Shortest::BASE_URL, [
+
+            // Set the put headers.
             'headers' => [
+
+                // Get the public api token from the config file.
                 'public-api-token' => $this->config->get('shortest.api_token')
             ],
+
+            // Set the parameters.
             'form_params' => [
+
+                // The url that needs to be shorten.
                 'urlToShorten' => $url_to_shorten
             ]
         ]);
