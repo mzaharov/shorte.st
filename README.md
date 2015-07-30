@@ -1,5 +1,7 @@
 # Laravel Shorte.st
 
+[![Latest Stable Version](https://poser.pugx.org/appsketch/shortest/v/stable)](https://packagist.org/packages/appsketch/shortest) [![Total Downloads](https://poser.pugx.org/appsketch/shortest/downloads)](https://packagist.org/packages/appsketch/shortest) [![Latest Unstable Version](https://poser.pugx.org/appsketch/shortest/v/unstable)](https://packagist.org/packages/appsketch/shortest) [![License](https://poser.pugx.org/appsketch/shortest/license)](https://packagist.org/packages/appsketch/shortest)
+
 ## Installation
 
 First, pull in the package through Composer.
