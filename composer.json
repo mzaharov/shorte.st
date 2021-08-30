@@ -1,20 +1,17 @@
 {
-    "name": "appsketch/shortest",
-    "description": "A shorte.st wrapper for Laravel 5 and 5.1.",
+    "name": "mzaharov/shortest",
+    "description": "A shorte.st wrapper for Laravel 8",
     "keywords": ["laravel", "shortest", "shorte.st", "shortener"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Maarten Paauw",
-            "email": "maartenpaauw@gmail.com"
+            "name": "Mark Z",
+            "email": "m.zaharov@pm.me"
         }
     ],
-    "require": {
-        "guzzlehttp/guzzle": "6.0.*"
-    },
     "autoload": {
         "psr-4": {
-            "Appsketch\\Shortest\\": "src/"
+            "Mzaharov\\Shortest\\": "src/"
         }
     },
     "require-dev": {
@@ -23,7 +20,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Appsketch\\Shortest\\Tests\\": "tests/"
+            "Mzaharov\\Shortest\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "stable"

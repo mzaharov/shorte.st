@@ -1,13 +1,13 @@
 <?php
 
-namespace Appsketch\Shortest\Facades;
+namespace Mzaharov\Shortest\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class Shortest
  *
- * @package Appsketch\Shortest\Facades
+ * @package Mzaharov\Shortest\Facades
  */
 class Shortest extends Facade
 {
@@ -16,6 +16,6 @@ class Shortest extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Appsketch\Shortest\Shortest';
+        return 'Mzaharov\Shortest\Shortest';
     }
 }

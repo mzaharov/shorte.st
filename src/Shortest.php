@@ -1,6 +1,6 @@
 <?php
 
-namespace Appsketch\Shortest;
+namespace Mzaharov\Shortest;
 
 use GuzzleHttp\Client;
 use Illuminate\Config\Repository as Config;
@@ -8,7 +8,7 @@ use Illuminate\Config\Repository as Config;
 /**
  * Class Shortest
  *
- * @package Appsketch\Shortest
+ * @package Mzaharov\Shortest
  */
 class Shortest
 {

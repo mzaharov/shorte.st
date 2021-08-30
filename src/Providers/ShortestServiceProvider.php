@@ -1,8 +1,8 @@
 <?php
 
-namespace Appsketch\Shortest\Providers;
+namespace Mzaharov\Shortest\Providers;
 
-use Appsketch\Shortest\Shortest;
+use Mzaharov\Shortest\Shortest;
 use GuzzleHttp\Client;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\Facades\Config;
@@ -64,7 +64,7 @@ class ShortestServiceProvider extends ServiceProvider
      */
     private function registerShortest()
     {
-        $this->app->bind('Appsketch\Shortest\Shortest', function($app)
+        $this->app->bind('Mzaharov\Shortest\Shortest', function($app)
         {
             return new Shortest($app['GuzzleHttp\Client'], $app['config']);
         });
@@ -79,7 +79,7 @@ class ShortestServiceProvider extends ServiceProvider
         {
             AliasLoader::getInstance()->alias(
                 'Shortest',
-                \Appsketch\Shortest\Facades\Shortest::class
+                \Mzaharov\Shortest\Facades\Shortest::class
             );
         }
     }
@@ -124,7 +124,7 @@ class ShortestServiceProvider extends ServiceProvider
     public function provides()
     {
         return [
-            'Appsketch\Shortest\Shortest',
+            'Mzaharov\Shortest\Shortest',
             'GuzzleHttp\Client'
         ];
     }
